@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Billing order suite" parallel="classes" thread-count="1" >
+    <test name="EdgeTests">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="tests.BillingOrderTests" />
+            <class name="tests.TestBlankFormPageTests" />
+        </classes>
+    </test>
+</suite>
